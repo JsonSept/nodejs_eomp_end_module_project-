@@ -70,7 +70,6 @@ const auth = async (req,res,next) => {  //middleware (req,res,next())
     })
 }
 
-
 app.listen(PORT, ()=>{
     console.log('http://localhost:'+ PORT);
 })
