@@ -28,7 +28,9 @@ const getSingle = async(prodID) =>{
 // to delete an item
 const deleteItem = async(prodID) => {
     const [result] = await pool.query(`
-        DELETE FROM products WHERE (prodID) = (?)
+        DELETE 
+        FROM products
+        WHERE prodID = ?
     `,[prodID])
     return result
 }

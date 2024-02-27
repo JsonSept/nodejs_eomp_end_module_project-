@@ -33,8 +33,8 @@ next()
 })
 }
 
-app.use('/users',authenticate,usersRouter)
-app.use('/products',authenticate,productsRouter)
+app.use('/users',usersRouter)
+app.use('/products',productsRouter)
 
 
 app.post('/users',(req,res)=>{
