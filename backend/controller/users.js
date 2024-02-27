@@ -21,6 +21,7 @@ export default {
 
     rmvPostUser : async(req,res)=>{
         res.send(await deleteUser(+req.params.id))
+        alert('user has been removed from the database')
     },
 
     getPatchUser : async (req,res)=>{
